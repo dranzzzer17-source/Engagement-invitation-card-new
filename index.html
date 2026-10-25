@@ -21,141 +21,198 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px 15px;
+      padding: 20px 10px;
+    }
+    .card-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
     }
     .card {
-      background: #fffbf7;
+      background: #fffdf9 url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png');
       width: 100%;
-      max-width: 480px;
-      padding: 35px 20px 25px 20px;
-      border-radius: 220px 220px 16px 16px;
+      padding: 30px 20px 25px 20px;
+      border-radius: 16px;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
       border: 1px solid #eae5d9;
       text-align: center;
       position: relative;
+      overflow: hidden;
     }
     .border-inner {
       border: 2px solid #d4af37;
-      padding: 25px 10px 20px 10px;
-      border-radius: 200px 200px 12px 12px;
+      padding: 20px 10px 15px 10px;
+      border-radius: 12px;
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 253, 249, 0.85);
     }
+
+    /* Ganesh Icon Header */
+    .ganesh-icon {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 5px;
+    }
+
     .main-title {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.1rem;
+      font-size: 3rem;
       color: #8c7851;
       margin-bottom: 2px;
       line-height: 1.1;
     }
     .subtitle {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       color: #666;
       line-height: 1.4;
       margin-bottom: 12px;
-      padding: 0 10px;
+      padding: 0 5px;
     }
+
+    /* Content Area */
+    .content-container {
+      width: 65%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Bride & Groom Name Styling using Great Vibes */
     .names {
       font-family: 'Great Vibes', cursive;
-      font-size: 2.6rem;
+      font-size: 2.7rem;
+      font-weight: 400;
       color: #b33939;
       margin: 2px 0;
-      line-height: 1.1;
+      line-height: 1.25;
       white-space: nowrap;
+      letter-spacing: 0.5px;
     }
     .ampersand {
       font-family: 'Great Vibes', cursive;
-      font-size: 1.9rem;
+      font-size: 2rem;
       color: #d4af37;
       display: block;
       margin: -2px 0;
     }
     .parents {
-      font-size: 0.62rem;
+      font-size: 0.58rem;
       color: #666;
-      margin-top: 3px;
-      margin-bottom: 10px;
-      line-height: 1.3;
+      margin-top: 2px;
+      margin-bottom: 8px;
+      line-height: 1.2;
       white-space: nowrap;
     }
+
     .date-row {
       display: flex;
       align-items: center;
       justify-content: center;
       border-top: 1px solid #e0d8cc;
       border-bottom: 1px solid #e0d8cc;
-      padding: 7px 0;
-      margin: 10px 0;
+      padding: 6px 0;
+      margin: 8px 0;
     }
     .day-box {
       font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #444;
-      padding-right: 12px;
+      padding-right: 8px;
       border-right: 1px solid #d4af37;
       letter-spacing: 1px;
     }
     .date-number {
       font-family: 'Cinzel', serif;
-      font-size: 2.1rem;
+      font-size: 1.8rem;
       color: #333;
-      padding: 0 12px;
+      padding: 0 8px;
       line-height: 1;
       font-weight: 600;
     }
     .month-box {
       font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #444;
-      padding-left: 12px;
+      padding-left: 8px;
       border-left: 1px solid #d4af37;
       letter-spacing: 1px;
     }
     .time-text {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: #666;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-weight: 500;
     }
+
     .venue-title {
       font-family: 'Cinzel', serif;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       color: #8c7851;
       letter-spacing: 2px;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
     .venue-details {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: #444;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 1.3;
     }
+
+    /* Embedded Artwork */
+    .couple-img {
+      position: absolute;
+      right: -10px;
+      bottom: 40px;
+      width: 175px;
+      z-index: 3;
+      pointer-events: none;
+    }
+    .floral-top-right {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 140px;
+      z-index: 1;
+      opacity: 0.9;
+    }
+    .floral-bottom-left {
+      position: absolute;
+      bottom: -10px;
+      left: -10px;
+      width: 130px;
+      z-index: 1;
+      opacity: 0.8;
+    }
+
     .qr-section {
       margin-top: 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 3px;
+      gap: 2px;
     }
     .qr-section img {
-      width: 65px;
-      height: 65px;
+      width: 60px;
+      height: 60px;
       border: 1px solid #eae5d9;
       border-radius: 4px;
-      padding: 3px;
+      padding: 2px;
       background: #fff;
     }
     .qr-label {
-      font-size: 0.58rem;
+      font-size: 0.55rem;
       color: #8c7851;
       font-family: 'Cinzel', serif;
       letter-spacing: 1px;
       text-transform: uppercase;
     }
+
     .actions {
       display: flex;
       flex-direction: column;
       gap: 10px;
       width: 100%;
-      max-width: 480px;
+      max-width: 500px;
       margin-top: 20px;
     }
     .maps-btn {
@@ -189,37 +246,49 @@
 </head>
 <body>
 
-  <!-- Card Container -->
-  <div class="card" id="invitationCard">
-    <div class="border-inner">
-      <h1 class="main-title">Engagement</h1>
-      <p class="subtitle">You're Invited to Celebrate Our Engagement!<br>With joy in our hearts, we announce the engagement of</p>
-      
-      <div class="names">Sneha K Unni</div>
-      <div class="parents">D/o Smt. Jyothi Lakshmi &amp; Shri. Krishnanunni K P</div>
-      
-      <span class="ampersand">&amp;</span>
-      
-      <div class="names">Vishnu K R</div>
-      <div class="parents">S/o Smt. Sasikala E &amp; Shri. Raveendran K K</div>
+  <div class="card-wrapper">
+    <!-- Card Container -->
+    <div class="card" id="invitationCard">
+      <!-- Background Artwork -->
+      <img class="floral-top-right" src="https://cdni.iconscout.com/illustration/premium/thumb/indian-wedding-mandap-decoration-5674393-4731888.png" alt="Mandap Floral">
+      <img class="floral-bottom-left" src="https://cdni.iconscout.com/illustration/premium/thumb/tropical-flowers-and-leaves-4437270-3684813.png" alt="Tropical Flowers">
+      <img class="couple-img" src="https://cdni.iconscout.com/illustration/premium/thumb/indian-wedding-couple-5674389-4731884.png" alt="Indian Couple Illustration">
 
-      <div class="date-row">
-        <div class="day-box">Sunday</div>
-        <div class="date-number">15</div>
-        <div class="month-box">November</div>
-      </div>
+      <div class="border-inner">
+        <!-- Ganesh Logo Header -->
+        <img class="ganesh-icon" src="https://cdn-icons-png.flaticon.com/512/3503/3503433.png" alt="Ganesha">
 
-      <div class="time-text">AT 10:00 AM - 11:00 AM</div>
+        <h1 class="main-title">Engagement</h1>
+        <p class="subtitle">You're Invited to Celebrate Our Engagement!<br>With joy in our hearts, we announce the engagement of</p>
+        
+        <div class="content-container">
+          <div class="names">Sneha K Unni</div>
+          <div class="parents">D/o Smt. Jyothilakshmi K &amp; Shri. Krishnanunni K P</div>
+          
+          <span class="ampersand">&amp;</span>
+          
+          <div class="names">Vishnu K R</div>
+          <div class="parents">S/o Smt. Sasikala E &amp; Shri. Raveendran K K</div>
 
-      <div class="venue-title">-: VENUE :-</div>
-      <div class="venue-details">
-        <strong>SNEHAJYOTHI House</strong>, Thrikkadeeri
-      </div>
+          <div class="date-row">
+            <div class="day-box">Sunday</div>
+            <div class="date-number">15</div>
+            <div class="month-box">November</div>
+          </div>
 
-      <!-- QR Code Section -->
-      <div class="qr-section">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/aXnvDWQh4ryWFHVA6?g_st=ac" alt="Google Maps QR Code">
-        <span class="qr-label">📍 Scan for Location</span>
+          <div class="time-text">AT 10:00 AM - 11:00 AM</div>
+
+          <div class="venue-title">-: VENUE :-</div>
+          <div class="venue-details">
+            <strong>SNEHAJYOTHI(House)</strong><br>Vasantham Garden,Thrikkadeeri
+          </div>
+
+          <!-- QR Code Section -->
+          <div class="qr-section">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/aXnvDWQh4ryWFHVA6?g_st=ac" alt="Google Maps QR Code">
+            <span class="qr-label">📍 Scan for Location</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -237,7 +306,7 @@
   <script>
     function downloadCard() {
       const card = document.getElementById('invitationCard');
-      html2canvas(card, { scale: 3, useCORS: true }).then(canvas => {
+      html2canvas(card, { scale: 3, useCORS: true, allowTaint: true }).then(canvas => {
         const link = document.createElement('a');
         link.download = 'Sneha-Vishnu-Engagement-Invitation.png';
         link.href = canvas.toDataURL('image/png');
